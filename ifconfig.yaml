@@ -1,0 +1,7 @@
+- name: test playbook
+  hosts: osd3
+
+  tasks:
+      - shell: ifconfig
+        ignore_errors: yes
+        register: uname_result
